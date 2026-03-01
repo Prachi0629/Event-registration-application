@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+            background-image: url('webbgimage.jpg');
+        }
+        
+   .container{
+    margin-top: 70px;
+    width: 530px;
+    background-color: beige;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+
+}
+.container input{
+width: 100%;
+padding: 10px;
+border: none;
+border-bottom: 2px solid #777777;
+margin-bottom: 20px;
+font-size: 17px;
+outline: none;
+}
+.btn{
+    border: none !important;
+    cursor: pointer;
+    background-color: #32cd9c;
+    margin: 15px 0;
+    font-size: 17px;
+    width: 100%;
+    padding: 14px;
+}
+.btn:hover{
+    background-color: #1f7d5f;
+    color: antiquewhite;
+}
+
+
+
+
+
+/* =======================
+   GLOBAL RESPONSIVE FIXES
+======================= */
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =======================
+   NAVBAR MOBILE FIX
+======================= */
+.navbar-brand {
+  font-size: 1.2rem;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+/* =======================
+   FLEX & CARD FIXES
+======================= */
+.flex-container {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+/* =======================
+   TEXT SCALING
+======================= */
+h1, h2 {
+  text-align: center;
+}
+
+.lead {
+  font-size: 1rem;
+}
+
+/* =======================
+   REGISTRATION FORM FIX
+======================= */
+.container {
+  max-width: 100%;
+  width: 90%;
+}
+
+/* =======================
+   CAROUSEL FIX
+======================= */
+.carousel img {
+  border-radius: 10px;
+}
+
+/* =======================
+   MOBILE VIEW (≤768px)
+======================= */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    padding: 10px;
+  }
+
+  /* Hero text */
+  h1.display-4,
+  h1.display-5 {
+    font-size: 1.8rem;
+  }
+
+  /* Flex layout stack */
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Event cards */
+  .card {
+    width: 90% !important;
+  }
+
+  /* Feature section */
+  .row-cols-lg-3 {
+    row-gap: 20px;
+  }
+
+  /* Venue/Time section */
+  .you {
+    flex-direction: column;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* Buttons */
+  .btn {
+    width: 100%;
+  }
+}
+
+/* =======================
+   SMALL MOBILE (≤480px)
+======================= */
+@media (max-width: 460px) {
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
+
+
+/* =======================
+   FULL.HTML – CAROUSEL FIX
+======================= */
+
+.carousel {
+  max-width: 100%;
+  margin: auto;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Mobile view fix */
+@media (max-width: 80px) {
+  .carousel-inner img {
+    height: 100px;
+    object-fit: contain;
+  }
+}
+
+
+/* =======================
+   IOT.HTML – IMAGE FIX
+======================= */
+
+.circle2 {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.circle2 img,
+.circular img {
+  width: 90%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+
+
+
+/* =======================
+   REGISTRATION FORM FIX
+======================= */
+
+.container {
+  margin-top: 70px;
+  max-width: 500px;     /* 👈 limits width on laptop */
+  width: 90%;
+  background-color: beige;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
